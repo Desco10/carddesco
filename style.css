@@ -17,8 +17,15 @@ body {
     position: relative;
   }
   
- 
-  
+ @media screen and (max-width: 768px) {
+  .card-container {
+    width: 96vw;          /* 96% del ancho de la ventana */
+    height: 92vh;         /* 92% de la altura de la ventana */
+    max-width: none;
+    max-height: none;
+    margin: 2vh auto;     /* Centrada verticalmente con margen superior e inferior */
+  }
+}
   /* Parte TRASERA  */
   .card-face {
     width: 100%;
